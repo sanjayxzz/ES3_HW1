@@ -1,0 +1,60 @@
+//1//
+
+const { basename } = require("path");
+
+const rectangleArea = (length= 5,width= 3) => length * width ;
+console.log(rectangleArea())
+console.log(rectangleArea(4))
+
+//2//
+
+const concatenateStrings = (str1,str2 ="neog") => str1 + str2
+console.log(concatenateStrings("hello","world"))
+console.log(concatenateStrings("hello"))
+
+//3//
+
+const cylinderVolume = (radius=2,height =4) => Math.PI * Math.pow(radius,2) * height
+  console.log(cylinderVolume(3))
+console.log(cylinderVolume(3,5))
+
+//4//
+
+const shoppingCartTotal = (price =0  ,quantity =1) => price * quantity
+console.log(shoppingCartTotal(10))
+console.log(shoppingCartTotal(15,3))
+console.log(shoppingCartTotal())
+
+
+//5//
+
+const generateUserProfil= (userName = "guest",age = 24,country="india") => { return `userName: ${userName} + age: ${age} + country:${country}`}
+console.log(generateUserProfil())
+console.log(generateUserProfil("neog",23,"india"))
+
+//6//
+
+const sum = (a, b = 5) => a+ b
+console.log(sum(2,4))
+console.log(sum(3))
+
+//7//
+
+const triangleArea = (base = 5,exponent= 1) => Math.pow(base ,exponent)
+console.log(triangleArea(2,3))
+
+console.log(triangleArea(5))
+
+//8//
+
+const triangleArea1 = (base = 5,height = 4) => (base * height) / 2
+
+console.log(triangleArea1(5))
+console.log(triangleArea1(3,6))
+
+//9//
+
+const concatenateStrings1 = (str1,str2='') => str1+ str2
+console.log(concatenateStrings1("hello"))
+
+
